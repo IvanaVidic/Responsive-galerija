@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial- scale=1.0">
+        <title>Responsive Galerija</title>
+    </head>
+    <body>
+        <h1>Gallery Heading</h1>
+        <div id="flexbox">
+            <div class="box"> 
+                <div class="thumbnail"><img src="placeholder-image.png" alt="image"></div>
+                <div class="title">Image Title</div>
+            </div>
+
+            <div class="box">
+                <div class="thumbnail"><img src="placeholder-image.png" alt="image"></div>
+                <div class="title">Image Title</div>
+            </div>
+
+            <div class="box"> 
+                <div class="thumbnail"><img src="placeholder-image.png" alt="image"></div>
+                <div class="title">Image Title</div>
+            </div>
+
+            <div class="box"> 
+                <div class="thumbnail"><img src="placeholder-image.png" alt="image"></div>
+                <div class="title">Image Title</div>
+            </div>
+
+            <div class="box"> 
+                <div class="thumbnail"><img src="placeholder-image.png" alt="image"></div>
+                <div class="title">Image Title</div>
+            </div>
+
+            <div class="box"> 
+                <div class="thumbnail"><img src="placeholder-image.png" alt="Image" ></div>
+                <div class="title">Image Title</div>
+            </div>
+
+<div class="box"> 
+                <div class="thumbnail"><img src="placeholder-image.png" alt="Image" ></div>
+                <div class="title">Image Title</div>
+            </div>
+            <div class="box"> 
+                <div class="thumbnail"><img src="placeholder-image.png" alt="Image" ></div>
+                <div class="title">Image Title</div>
+            </div>
+            <div class="box"> 
+                <div class="thumbnail"><img src="placeholder-image.png" alt="Image" ></div>
+                <div class="title">Image Title</div>
+            </div>
+            
+            
+            </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo justo, scelerisque eu volutpat eget, consectetur a sem. Pellentesque nec nisl at tellus ullamcorper imperdiet sed quis lacus. In nec lectus at risus dapibus
+         elementum. Nulla venenatis mi et ipsum mollis, sed sollicitudin sem condimentum. 
+         Cras eu ligula scelerisque, scelerisque erat sed, rhoncus nisl. Pellentesque sollicitudin ac diam sit amet venenatis. Proin non hendrerit neque. Integer pretium, turpis et efficitur placerat, justo mi eleifend leo,
+          eu facilisis eros ligula eget velit. Nam id euismod augue. Donec ultricies erat sit amet velit commodo vehicula. Quisque in fringilla risus, vel vehicula libero.</p>
+    </body>
+</html>
+<style>
+    img{
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+}
+#flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.box {
+    border-radius: 15px;
+    flex-basis: 17%;
+    margin-top: 30px;
+    background-color: #6ba2d9;
+    box-sizing: border-box;
+}
+
+.title {
+    background-color: #faf7ff;
+    text-align: center;
+}
+
+@media  screen and (max-width: 992px) {
+.box {
+    flex-basis: 32%;
+}
+}
+
+@media  screen and (max-width: 576px) {
+    .box {
+        flex-basis: 99%;
+    }
+}
+</style>
